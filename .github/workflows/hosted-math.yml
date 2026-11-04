@@ -19,8 +19,6 @@ jobs:
     env:
       SOURCE_REVISION: ${{ github.event.pull_request.head.sha }}
       SOURCE_REPOSITORY: ${{ github.repository }}
-      CAPTURE_DEPENDENCIES: ${{ runner.temp }}/hosted-math-dependencies
-      CAPTURE_EVIDENCE: ${{ runner.temp }}/hosted-math-evidence
     steps:
       - name: Initialize evidence
         run: |
@@ -28,8 +26,12 @@ jobs:
           import json, os, sys
           from pathlib import Path
           assert sys.version_info >= (3, 10)
-          output = Path(os.environ['CAPTURE_EVIDENCE'])
+          temporary = Path(os.environ['RUNNER_TEMP'])
+          output = temporary / 'hosted-math-evidence'
           output.mkdir()
+          with Path(os.environ['GITHUB_ENV']).open('a') as environment:
+              environment.write(f'CAPTURE_DEPENDENCIES={temporary / "hosted-math-dependencies"}\n')
+              environment.write(f'CAPTURE_EVIDENCE={output}\n')
           record = {
               'repository': os.environ['SOURCE_REPOSITORY'],
               'revision': os.environ['SOURCE_REVISION'],
