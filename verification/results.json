@@ -1,0 +1,164 @@
+{
+  "scope": "Finite numerical diagnostics of independent representations and evaluation of analytic bounds; universal proofs are in science/.",
+  "software": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "energy": {
+    "max_entry_errors": {
+      "normalization": 3.3306690738754696e-16,
+      "q_squared": 3.3306690738754696e-16,
+      "p_squared": 4.440892098500626e-16,
+      "number_form": 2.220446049250313e-16
+    },
+    "number_form": [
+      [
+        1.5148176308472474,
+        0.0
+      ],
+      [
+        0.0,
+        1.5148176308472479
+      ]
+    ]
+  },
+  "wavefunction_decoder": {
+    "displacement_cases": 20,
+    "matrix_unit_comparisons": 80,
+    "largest_lattice_index": 100,
+    "max_entry_error": 6.838598303762406e-12,
+    "max_trace_error": 7.549516567451064e-15,
+    "minimum_choi_eigenvalue": -6.421864992903203e-17,
+    "symmetric_noise_pauli_eigenvalue_error": 5.551115123125783e-17
+  },
+  "fourier": {
+    "mean_error": 0.0,
+    "coefficients_compared": 17,
+    "max_coefficient_error": 1.8008317644866427e-16
+  },
+  "analytic_operating_point": {
+    "eta": 0.9,
+    "residue_cells_per_axis": 64,
+    "input_mean_photons": 1.5148176308472476,
+    "bath_mutual_information_upper_bits": 12.0,
+    "gaussian_displacement_variance_per_quadrature": 0.11111111111111108,
+    "A_lower": 0.9432579593970494,
+    "c_lower": 0.8358050981118189,
+    "pauli_probabilities_at_lower_parameters": [
+      0.8658188853478271,
+      0.0774390740492222,
+      0.028371020301475314,
+      0.028371020301475314
+    ],
+    "coherent_information_lower": 0.24259452381736923,
+    "displayed_rate_lower_rounded_down": 0.24259,
+    "product_bath_EB_threshold_N": 9.000000000000002,
+    "auxiliary_thermal_input_coherent_information": 1.6761131206892237
+  },
+  "matching_Gaussian_inner_code": {
+    "A_lower": 0.9454433105933656,
+    "c_lower": 0.839849201571523,
+    "coherent_information_lower": 0.2595077527718129,
+    "input_energy_every_logical_state": 1.5148176308472476,
+    "role": "Matching Gaussian bath feasibility with the same finite-energy inner encoder, amplifier, and decoder."
+  },
+  "robustness": {
+    "general_correlated_noise_Choi_spectrum_error": 4.440892098500626e-16,
+    "additional_RMS_displacement_bounds": {
+      "0.01": 0.1586478454823954,
+      "0.02": 0.07942170225249956
+    },
+    "extra_Gaussian_variance": 0.05,
+    "extra_Gaussian_rate_lower": 0.02174189911011082,
+    "vacuum_channel_half_trace_distance_bound": 0.005,
+    "conditional_entropy_penalty": 0.05545075986009837,
+    "combined_rate_lower_at_RMS_0.01": 0.10319708562229704
+  },
+  "finite_temperature_cell_diagnostics": [
+    {
+      "N": 0.001,
+      "label_entropy_bits_two_axes": 2.000000000009587,
+      "cell_mass_sum_error": 7.66053886991358e-15,
+      "cell_mass_CDF_vs_quadrature_max_error": 4.163336342344337e-15,
+      "first_residual_characteristic": 0.9999365804883523,
+      "A_numerical": 0.9462845725854355,
+      "c_numerical": 0.8397959387453017,
+      "decoded_coherent_information_numerical": 0.26339357607553215,
+      "omitted_Fourier_tail_bound_for_A": 5.015822513626776e-24,
+      "quadrature_order_48_vs_96_max_error": 1.4099832412739488e-14
+    },
+    {
+      "N": 0.1,
+      "label_entropy_bits_two_axes": 5.015751260320158,
+      "cell_mass_sum_error": 0.0,
+      "cell_mass_CDF_vs_quadrature_max_error": 1.0824674490095276e-15,
+      "first_residual_characteristic": 0.999232401912246,
+      "A_numerical": 0.9460130148830821,
+      "c_numerical": 0.839204534930395,
+      "decoded_coherent_information_numerical": 0.26112412919385397,
+      "omitted_Fourier_tail_bound_for_A": 5.015822513626776e-24,
+      "quadrature_order_48_vs_96_max_error": 1.2212453270876722e-15
+    },
+    {
+      "N": 1,
+      "label_entropy_bits_two_axes": 8.279394008934805,
+      "cell_mass_sum_error": 0.0,
+      "cell_mass_CDF_vs_quadrature_max_error": 7.077671781985373e-16,
+      "first_residual_characteristic": 0.9992007450901949,
+      "A_numerical": 0.9460008043389441,
+      "c_numerical": 0.8391779479736711,
+      "decoded_coherent_information_numerical": 0.2610221931643948,
+      "omitted_Fourier_tail_bound_for_A": 5.015822513626776e-24,
+      "quadrature_order_48_vs_96_max_error": 1.6653345369377348e-15
+    },
+    {
+      "N": 9,
+      "label_entropy_bits_two_axes": 11.345773988733946,
+      "cell_mass_sum_error": 1.1102230246251565e-16,
+      "cell_mass_CDF_vs_quadrature_max_error": 2.3592239273284576e-16,
+      "first_residual_characteristic": 0.9991973818686498,
+      "A_numerical": 0.9459995070849981,
+      "c_numerical": 0.8391751233747416,
+      "decoded_coherent_information_numerical": 0.26101136395862923,
+      "omitted_Fourier_tail_bound_for_A": 5.015822513626776e-24,
+      "quadrature_order_48_vs_96_max_error": 1.6653345369377348e-15
+    },
+    {
+      "N": 100,
+      "label_entropy_bits_two_axes": 11.999999924144502,
+      "cell_mass_sum_error": 2.220446049250313e-16,
+      "cell_mass_CDF_vs_quadrature_max_error": 1.734723475976807e-16,
+      "first_residual_characteristic": 0.999197067539265,
+      "A_numerical": 0.9459993858425569,
+      "c_numerical": 0.8391748593854588,
+      "decoded_coherent_information_numerical": 0.2610103518571163,
+      "omitted_Fourier_tail_bound_for_A": 5.015822513626776e-24,
+      "quadrature_order_48_vs_96_max_error": 1.7763568394002505e-15
+    },
+    {
+      "N": 10000.0,
+      "label_entropy_bits_two_axes": 12.0,
+      "cell_mass_sum_error": 0.0,
+      "cell_mass_CDF_vs_quadrature_max_error": 0.0,
+      "first_residual_characteristic": 0.9991970675392305,
+      "A_numerical": 0.9459993858425435,
+      "c_numerical": 0.8391748593854299,
+      "decoded_coherent_information_numerical": 0.26101035185700483,
+      "omitted_Fourier_tail_bound_for_A": 5.015822513626776e-24,
+      "quadrature_order_48_vs_96_max_error": 2.220446049250313e-15
+    },
+    {
+      "N": 100000000.0,
+      "label_entropy_bits_two_axes": 12.0,
+      "cell_mass_sum_error": 0.0,
+      "cell_mass_CDF_vs_quadrature_max_error": 0.0,
+      "first_residual_characteristic": 0.9991970675392305,
+      "A_numerical": 0.9459993858425435,
+      "c_numerical": 0.8391748593854299,
+      "decoded_coherent_information_numerical": 0.26101035185700483,
+      "omitted_Fourier_tail_bound_for_A": 5.015822513626776e-24,
+      "quadrature_order_48_vs_96_max_error": 2.220446049250313e-15
+    }
+  ],
+  "pass": true
+}
