@@ -1,0 +1,49 @@
+# Quantum Thermal Correlation Cost
+
+> A fixed lossy quantum interface receives two locally thermal reservoir modes. This project compares the mutual information needed between them to retain a fixed quantum communication rate at fixed signal input energy as thermal occupation increases.
+
+## Reader routes
+
+- [Repository overview](README.md): scientific question, explicit operating point, cost bounds, figure, learning route, and reproduction commands.
+- [Scientific overview](science/README.md): the connected argument from exact thermal preparation to the Gaussian/non-Gaussian resource separation.
+- [Learning overview](learning/README.md): how the single educational anchor and common milestone map support the project.
+- [Wilde bridge](learning/anchor-bridge.md): selected second edition (2017), relevant source sections, translated notation and assumptions, and the oscillator-specific connections supplied locally.
+- [Thirty milestones](learning/milestones.md): background/preliminaries followed by narrative/innovation, with dependencies and understanding targets.
+
+For the physical story, read the overview and interpretation, then the model and reservoir construction. For a theorem audit, begin with the model, follow the finite-energy code and rate proof, and compare the two converses. For study, use the bridge alongside the milestone map. For reproduction, use the verification guide and its pinned dependencies.
+
+## Authoritative scientific accounts
+
+- [Model and main theorem](science/model.md): exact thermal marginals, balanced mixer and fixed attenuator, fresh independent reservoir pairs, inaccessible preparation label and reservoir outputs, uniform energy constraint, and optimized correlation costs.
+- [Reservoir construction](science/bath-construction.md): conditional coherent-state sampling, exact marginal preservation, finite-register mutual-information bound, and reduction to lattice displacement plus bounded residue and Gaussian noise.
+- [Modular code](science/modular-code.md): oscillator-to-logical/gauge coordinate map, global lattice invariance of the decoder, normalizable sine-packet encoder, exact energy quadratic form, and the fixed-displacement logical channel.
+- [Achievable rate](science/achievable-rate.md): decoded Pauli probabilities, Fourier bounds, the exact positive rate constant, and concatenation with finite-dimensional quantum codes.
+- [Correlation converse](science/correlation-converses.md): product-thermal entanglement-breaking reference, adaptive-protocol data processing, finite-block entanglement test, and the nonzero correlation-cost floor.
+- [Gaussian comparison](science/gaussian-comparison.md): Gaussian entanglement-breaking criterion, entropy bound, logarithmic lower cost, and a matching Gaussian construction using the same signal-energy constraint.
+- [Robustness](science/robustness.md): general biased/correlated displacement errors, independent Gaussian perturbations, a physical calibration model, and sufficient rate guarantees with explicit temperature dependence.
+- [Interpretation](science/interpretation.md): how structured hot noise remains compatible with a logical subsystem, why the collective bath stays hot, and which physical resources lie outside the stated cost.
+
+## Scientific distinctions
+
+The general and separable correlation costs have constant asymptotic order for fixed positive rates in the proved range. The Gaussian cost has logarithmic order. The Gaussian class includes entangled and phase-sensitive reservoir states and leaves endpoint processing unrestricted.
+
+The input-energy condition holds for every logical state, including entangled block-code inputs. The same finite-energy inner encoder certifies Gaussian feasibility. A thermal-input coherent-information value appears only as an auxiliary numerical benchmark.
+
+The preparation-label entropy bounds quantum mutual information; neither is identified with thermodynamic work. The preparation is separable and has a positive coherent-state representation, which does not imply zero quantum discord.
+
+The decoder is invariant under lattice displacement after discarding its gauge subsystem. The normalizable input packets themselves are not invariant under unbounded translation.
+
+Each capacity statement concerns a fixed, known channel and independent bath pairs. The inner encoder and decoder are independent of temperature; the outer quantum code may depend on the known channel. A common code for unknown temperature is outside the established statement.
+
+Additional displacement noise and multiplicative calibration errors have separate bounds. The sufficient relative-phase tolerance tightens with increasing thermal occupation. Failure of a sufficient bound does not establish zero capacity or a necessary precision law.
+
+## Attribution and verification
+
+- [Related work](references/related_work.md): inherited environmental-reactivation, environment-engineering, modular-decoding, Gaussian-channel, and data-processing ingredients, compared at the level of their actual models.
+- [Bibliography](references/references.bib): primary research sources and the selected educational anchor.
+- [Verification guide](verification/README.md): commands, expected discrepancies, dependency versions, finite-temperature diagnostics, perturbation checks, and figure interpretation.
+- [Verification script](verification/verify_science.py): independent wavefunction, energy, Fourier, residue-cell, and concrete perturbation calculations.
+- [Recorded results](verification/results.json): numerical observations and software versions.
+- [Figure generator](verification/plot_bounds.py): analytical lower and upper correlation-cost bounds and their data. The curves are certified bounds, not evaluations of the optimized costs.
+
+The written arguments establish the uniform and asymptotic statements. The finite numerical checks test their vulnerable identities and reproduce explicit operating points.
