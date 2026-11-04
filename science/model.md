@@ -45,7 +45,7 @@ Tracing the unused reservoir mode and the attenuator's environment output define
 Let $`Q_E(\mathcal N)`$ denote the unassisted quantum communication capacity under a mean input photon budget $`E`$ per signal use. For an $`m`$-use encoder $`\mathcal E_m`$, impose the stronger uniform condition
 
 ```math
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 \left(\sum_{t=1}^m\hat n_t\right)\mathcal E_m(\rho)
 \right]\le mE
 ```

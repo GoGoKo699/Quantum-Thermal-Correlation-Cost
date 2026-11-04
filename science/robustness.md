@@ -252,7 +252,7 @@ It follows that both real and imaginary parts of $`z'-z_0`$ have the same second
 ```math
 d_{\mathrm{exact}}^2
 =\frac N2\left(|k_1|^2+|k_2|^2\right)
-+\kappa_N\operatorname{Re}(k_1\overline{k_2}),
++\kappa_N\mathrm{Re}(k_1\overline{k_2}),
 ```
 
 and therefore obey the conservative bound
@@ -260,7 +260,7 @@ and therefore obey the conservative bound
 ```math
 d_{\mathrm{exact}}
 \le d_N:=
-\sqrt{\frac N2}\left(|k_1|+|k_2|\right).
+\left(\frac N2\right)^{1/2}\left(|k_1|+|k_2|\right).
 ```
 
 This is the source of the temperature dependence. The perturbation is a coefficient error multiplying the hot coherent amplitudes.
@@ -274,7 +274,7 @@ Use the beam-splitter and amplifier parameters
 ```math
 \vartheta(\eta)=\arccos\sqrt\eta,
 \qquad
-s(g)=\operatorname{arcosh}\sqrt g.
+s(g)=\mathrm{arcosh}\sqrt g.
 ```
 
 The half trace distance, including any reference, between the actual vacuum channel and the nominal vacuum channel on the encoded qubit is at most
@@ -351,7 +351,7 @@ Then $`t_{\mathrm{vac}}=0`$, and the exact displacement root-mean-square error i
 
 ```math
 d_\phi
-=r_0\sqrt{\frac N2}\,|e^{i\phi}-1|.
+=r_0\left(\frac N2\right)^{1/2}\,|e^{i\phi}-1|.
 ```
 
 Thus the following explicit sufficient condition gives a temperature-uniform positive rate:

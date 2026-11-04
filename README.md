@@ -64,6 +64,14 @@ The [scientific overview](science/README.md) connects the construction, converse
 
 Environmental reactivation, passive environment engineering, and modular bosonic decoding are established ingredients. The additional result is the correlation-cost separation with exact thermal local states, fixed nonzero loss, fixed signal energy, and a positive asymptotic quantum rate.
 
+## Learn the project
+
+The educational anchor is **Mark M. Wilde, *Quantum Information Theory*, second edition (2017)**. The [Wilde bridge](learning/anchor-bridge.md) connects quantum entropy, relative-entropy data processing, coherent information, and coding to the reservoir construction and its cost bounds. It translates the notation and identifies the oscillator-specific steps supplied by this project.
+
+The [30-milestone map](learning/milestones.md) develops the background framework, then follows the construction and converses toward the full resource comparison. Each milestone gives a central question, an understanding target, dependencies, a conceptual connection, and source pointers. The map is common to readers of the project.
+
+Start with the [learning overview](learning/README.md), or use the [reading guide](llms.txt) to find the authoritative statement, proof, interpretation, or calculation for a particular question.
+
 ## Reproduce the finite checks
 
 From the repository root:

@@ -36,7 +36,7 @@ This is the established Gaussian entanglement-breaking boundary; see [Holevo (20
 
 Consider a protocol using exactly $`m`$ fresh copies of $`\sigma`$. It starts without entanglement shared between the sender and receiver, and it aims to create a maximally entangled state $`\Phi_d`$ of Schmidt rank $`d`$ between their final logical registers. Arbitrary local quantum operations and unrestricted two-way classical communication may occur between channel uses. All failure and abort branches are included in the final state.
 
-Let $`F=\operatorname{Tr}(\Phi_d\rho_{AB})=1-\epsilon`$ be the unconditional entanglement fidelity, with $`0\le\epsilon\le1/2`$. If $`N\ge N_{\mathrm{EB}}(\eta)`$, then
+Let $`F=\mathrm{Tr}(\Phi_d\rho_{AB})=1-\epsilon`$ be the unconditional entanglement fidelity, with $`0\le\epsilon\le1/2`$. If $`N\ge N_{\mathrm{EB}}(\eta)`$, then
 
 ```math
 \boxed{
@@ -69,7 +69,7 @@ D(\rho_{AB}\|\zeta_{AB})
 Measure the two-outcome test $`\{\Phi_d,\mathbb I-\Phi_d\}`$ on both final states. Every separable state satisfies
 
 ```math
-q:=\operatorname{Tr}(\Phi_d\zeta_{AB})\le\frac1d.
+q:=\mathrm{Tr}(\Phi_d\zeta_{AB})\le\frac1d.
 ```
 
 Indeed, the overlap bound is immediate for a product pure state and extends by convexity and closure. Another application of data processing yields
