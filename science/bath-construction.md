@@ -22,7 +22,7 @@ Set
 ```math
 b=\sqrt\pi,
 \qquad
-r=\sqrt{\frac{1-\eta}{\eta}},
+r=\left(\frac{1-\eta}{\eta}\right)^{1/2},
 \qquad
 L=\frac{2b}{r}.
 ```
