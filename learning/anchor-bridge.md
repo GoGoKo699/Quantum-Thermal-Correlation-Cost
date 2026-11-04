@@ -59,7 +59,7 @@ For the independent preparation, even and odd parity each have probability $`1/2
 =\frac12\rho+\frac12Z\rho Z.
 ```
 
-If $`\rho=\begin{pmatrix}a&z\\z^*&1-a\end{pmatrix}`$, the result is $`\operatorname{diag}(a,1-a)`$. The off-diagonal entries, which carry phase coherence, vanish. This is the same channel as measuring in the $`|0\rangle,|1\rangle`$ basis and preparing the measured basis state, so it is entanglement breaking.
+If $`\rho=\begin{pmatrix}a&z\\z^*&1-a\end{pmatrix}`$, the result is $`\mathrm{diag}(a,1-a)`$. The off-diagonal entries, which carry phase coherence, vanish. This is the same channel as measuring in the $`|0\rangle,|1\rangle`$ basis and preparing the measured basis state, so it is entanglement breaking.
 
 For the correlated preparation, the bits always agree. The parity is always even, and
 

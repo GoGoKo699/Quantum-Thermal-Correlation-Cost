@@ -252,7 +252,7 @@ It follows that both real and imaginary parts of $`z'-z_0`$ have the same second
 ```math
 d_{\mathrm{exact}}^2
 =\frac N2\left(|k_1|^2+|k_2|^2\right)
-+\kappa_N\operatorname{Re}(k_1\overline{k_2}),
++\kappa_N\mathrm{Re}(k_1\overline{k_2}),
 ```
 
 and therefore obey the conservative bound
@@ -274,7 +274,7 @@ Use the beam-splitter and amplifier parameters
 ```math
 \vartheta(\eta)=\arccos\sqrt\eta,
 \qquad
-s(g)=\operatorname{arcosh}\sqrt g.
+s(g)=\mathrm{arcosh}\sqrt g.
 ```
 
 The half trace distance, including any reference, between the actual vacuum channel and the nominal vacuum channel on the encoded qubit is at most

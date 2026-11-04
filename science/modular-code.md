@@ -35,7 +35,7 @@ The decoding channel is
 
 ```math
 \mathcal R(\rho)
-=\operatorname{Tr}_{m,u}[W\rho W^\dagger].
+=\mathrm{Tr}_{m,u}[W\rho W^\dagger].
 ```
 
 This is a coherent extraction of a subsystem followed by a partial trace. Measuring $`j`$ would destroy the coherence that the channel must preserve.
@@ -68,7 +68,7 @@ WD(2bs,2bt)W^\dagger
 Taking the gauge trace proves the channel identity
 
 ```math
-\mathcal R\circ\operatorname{Ad}_{D(\ell)}
+\mathcal R\circ\mathrm{Ad}_{D(\ell)}
 =\mathcal R
 \qquad
 \text{for every }\ell\in(2b\mathbb Z)^2.
@@ -77,8 +77,8 @@ Taking the gauge trace proves the channel identity
 It holds on the entire oscillator trace class, and therefore also when an external reference is present. Weyl multiplication introduces only a scalar phase, which disappears under conjugation. Hence
 
 ```math
-\mathcal R\circ\operatorname{Ad}_{D(\ell+z)}
-=\mathcal R\circ\operatorname{Ad}_{D(z)}
+\mathcal R\circ\mathrm{Ad}_{D(\ell+z)}
+=\mathcal R\circ\mathrm{Ad}_{D(z)}
 ```
 
 for every lattice vector $`\ell`$ and every residual displacement $`z`$. The equality requires no independence between the lattice and residual parts of a random error.
@@ -112,7 +112,7 @@ WV|j\rangle
 =|j\rangle_L\otimes|0\rangle_m\otimes|f\rangle_u.
 ```
 
-Writing $`\mathcal V(\rho)=V\rho V^\dagger`$, this proves $`\mathcal R\circ\mathcal V=\operatorname{id}_2`$.
+Writing $`\mathcal V(\rho)=V\rho V^\dagger`$, this proves $`\mathcal R\circ\mathcal V=\mathrm{id}_2`$.
 
 The zero extension of $`f`$ is continuous and has a square-integrable weak first derivative. Both codewords therefore lie in the quadratic-form domain of the oscillator number operator
 
@@ -145,7 +145,7 @@ E_0=\frac{2\pi}{3}-\frac{1}{4\pi}-\frac12
 Every encoded logical state has exactly $`E_0`$ mean photons. This includes mixed states and marginals of logical states entangled with other channel inputs or a reference. For any state $`\rho`$ of $`k`$ logical qubits,
 
 ```math
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
   \left(\sum_{i=1}^k\hat n_i\right)
   V^{\otimes k}\rho(V^\dagger)^{\otimes k}
 \right]
@@ -177,7 +177,7 @@ The surviving parts of the two packets have the same gauge coordinates. A moment
 The resulting channel is therefore exactly
 
 ```math
-\left(\mathcal R\circ\operatorname{Ad}_{D(v,w)}
+\left(\mathcal R\circ\mathrm{Ad}_{D(v,w)}
        \circ\mathcal V\right)(\rho)
 =
 \begin{pmatrix}

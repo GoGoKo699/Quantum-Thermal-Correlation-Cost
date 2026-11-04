@@ -57,8 +57,8 @@ Draw one label $`C`$ with probabilities $`p_c`$. Conditional on that label, draw
 This is a separable state with a positive Glauber–Sudarshan representation. Its two marginals are exactly
 
 ```math
-\operatorname{Tr}_{E_2}\sigma_{N,M}
-=\operatorname{Tr}_{E_1}\sigma_{N,M}
+\mathrm{Tr}_{E_2}\sigma_{N,M}
+=\mathrm{Tr}_{E_1}\sigma_{N,M}
 =\sum_c p_c\rho_c
 =\tau_N.
 ```
@@ -108,8 +108,8 @@ K_q,K_p\in\mathbb Z,
 Multiplication by $`r`$ gives
 
 ```math
-r\bigl(\operatorname{Re}(\alpha-\beta),
-        \operatorname{Im}(\alpha-\beta)\bigr)
+r\bigl(\mathrm{Re}(\alpha-\beta),
+        \mathrm{Im}(\alpha-\beta)\bigr)
 =2bK+T,
 \qquad
 |T_q|,|T_p|\le\frac{2b}{M}.
@@ -148,8 +148,8 @@ For a coherent product component $`|\alpha\rangle|\beta\rangle`$, mode $`c`$ is 
 
 ```math
 \sqrt{1-\eta}\,
-\bigl(\operatorname{Re}(\alpha-\beta),
-      \operatorname{Im}(\alpha-\beta)\bigr).
+\bigl(\mathrm{Re}(\alpha-\beta),
+      \mathrm{Im}(\alpha-\beta)\bigr).
 ```
 
 Apply a quantum-limited amplifier $`\mathcal A_{1/\eta}`$ at the receiver. It rescales this displacement by $`1/\sqrt\eta`$. The attenuator–amplifier composition supplies an additional independent Gaussian displacement with covariance $`r^2 I_2`$.
@@ -159,7 +159,7 @@ For completeness, define the Weyl operator and characteristic function by
 ```math
 D(z_q,z_p)=e^{i(z_pq-z_qp)},
 \qquad
-\chi_\rho(z)=\operatorname{Tr}[\rho D(z)].
+\chi_\rho(z)=\mathrm{Tr}[\rho D(z)].
 ```
 
 The vacuum factor is $`e^{-\lVert z\rVert^2/4}`$. The two Gaussian channels act as
