@@ -103,3 +103,20 @@ The plotting code evaluates $`g`$ as $`\log_2(1+x)+x\log_2(1+1/x)`$ to avoid sub
 ## Perturbation bounds
 
 The robustness checks evaluate the specific bounds in [the robustness account](../science/robustness.md). A biased, correlated three-point displacement law is integrated at the wavefunction level to verify the general Choi spectrum involving the absolute coherence $`|B|`$. The script then checks the stated lower rates for root-mean-square displacement errors $`d=0.01`$ and $`d=0.02`$, independent Gaussian variance $`\Delta=0.05`$, and the combined calibration example $`d_N\le0.01`$, $`t_{\rm vac}\le0.005`$. It does not numerically certify an adversarial perturbation class or a necessary calibration precision; those statements retain the exact scope proved in the scientific account.
+
+## Check the hosted mathematics
+
+The [Hosted mathematics workflow](../.github/workflows/hosted-math.yml) reads the exact pull-request head and checks every tracked Markdown page on GitHub. It uses an anonymous browser at widths of 1440 and 760 pixels, compares each rendered MathML expression with the pinned source, and checks the headline inequalities against [an explicit text contract](hosted/math-contract.json). The workflow has read-only repository permissions and retains its HTML, screenshots, source inventory, and comparison reports as downloadable run artifacts for 14 days.
+
+The [collector](hosted/capture_hosted_math.cjs) and [comparison helper](hosted/check_rendered_math.py) can also run locally with Node.js 18 or newer, Python 3.10 or newer, Git, and the dependencies in [the locked package manifest](hosted/package-lock.json). Install those dependencies in a separate temporary directory, install Playwright's Chromium, and pass the full source commit to the collector:
+
+```bash
+NODE_PATH=/absolute/dependencies/node_modules node verification/hosted/capture_hosted_math.cjs \
+  --root /absolute/repository \
+  --repository GoGoKo699/Quantum-Thermal-Correlation-Cost \
+  --revision FULL_40_CHARACTER_COMMIT \
+  --output /absolute/new-empty-evidence-directory \
+  --contract verification/hosted/math-contract.json
+```
+
+The generated `hosted-report.json` binds the comparisons to the commit, file hashes, page scope, and browser widths. A structural pass still requires visual inspection of the saved equations, tables, figures, and navigation. It checks the observed hosted presentation; it does not establish scientific correctness or guarantee future GitHub rendering.

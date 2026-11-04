@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 1,
+      "source_sha256": "b844d90495f81a936239d3c346ff53468cfaa9951a0b3ee193438593bbb7d63c",
+      "expected_text": "Call(N)=Θ(1),CG(N)=Θ(logN),N→∞."
+    },
+    {
+      "path": "README.md",
+      "index": 13,
+      "source_sha256": "c2784dc56f2b17ff73e9344858bb089b08346fa33c0e61c732b8b0cd778ca6a9",
+      "expected_text": "R≤Call(N)≤Csep(N)≤12,"
+    },
+    {
+      "path": "README.md",
+      "index": 14,
+      "source_sha256": "ae78835665e009c834c2afa2c0812b00396f5baf67ddb7b30c682a4e385ea433",
+      "expected_text": "max{R,2g(N)−g(2N)−g(9)}≤CG(N)≤2g(N)−g(2N),"
+    },
+    {
+      "path": "science/correlation-converses.md",
+      "index": 17,
+      "source_sha256": "e588ce4750142a40b09d385275717ba3feb505a9b0f132dbaab133ff160f105a",
+      "expected_text": "mI(σ)≥(1−ε)log2d−h2(ε)."
+    },
+    {
+      "path": "science/modular-code.md",
+      "index": 35,
+      "source_sha256": "bcb71afddc4630894d343ad08c91abf1fd2357a6c13e04898978e4e3193a3532",
+      "required_text": [
+        "=E0I2,",
+        "≈1.5148176308472478."
+      ]
+    }
+  ]
+}
