@@ -260,7 +260,7 @@ and therefore obey the conservative bound
 ```math
 d_{\mathrm{exact}}
 \le d_N:=
-\sqrt{\frac N2}\left(|k_1|+|k_2|\right).
+\left(\frac N2\right)^{1/2}\left(|k_1|+|k_2|\right).
 ```
 
 This is the source of the temperature dependence. The perturbation is a coefficient error multiplying the hot coherent amplitudes.
@@ -351,7 +351,7 @@ Then $`t_{\mathrm{vac}}=0`$, and the exact displacement root-mean-square error i
 
 ```math
 d_\phi
-=r_0\sqrt{\frac N2}\,|e^{i\phi}-1|.
+=r_0\left(\frac N2\right)^{1/2}\,|e^{i\phi}-1|.
 ```
 
 Thus the following explicit sufficient condition gives a temperature-uniform positive rate:
